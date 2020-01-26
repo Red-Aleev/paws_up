@@ -214,6 +214,17 @@ country_event = {
 		set_politics = {
 			ruling_party = titoism
 		}
+		set_popularities = {
+                    democratic = 10
+	            fascism = 0
+	            chucheism = 1 
+	            maoism = 5
+	            trotskism = 10
+	            communism = 29
+	            liberal = 15
+	            neutrality = 0
+		    titoism = 30
+                }
 	}
 	option = {
 		name = ddr.7.c
@@ -222,5 +233,16 @@ country_event = {
 		set_politics = {
 			ruling_party = chucheism
 		}
+		set_popularities = {
+                    democratic = 0
+	            fascism = 5
+	            chucheism = 45
+	            maoism = 0
+	            trotskism = 10
+	            communism = 35
+	            liberal = 0
+	            neutrality = 0
+		    titoism = 5
+                }
 	}
 }
