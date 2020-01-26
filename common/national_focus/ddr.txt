@@ -161,6 +161,30 @@ focus_tree = {
 			always = no
 		}
 	}
+	
+	focus = {
+		id = DDR_natcom
+		icon = GFX_goal_support_fourth_int
+		cost = 1
+		prerequisite = {
+			focus = DDR_ideology
+		}
+		mutually_exclusive = {
+			focus = DDR_marx
+			focus = DDR_socdem
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+			chucheism_drift = 0.1
+		}
+		available = {
+			always = no
+		}
+	}
+
+
+
 	focus = {
 		id = DDR_war_fabric_2
 		icon = GFX_goal_generic_construct_military
@@ -193,6 +217,41 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = { 
+	       id = DDR_civ_fabric_3
+	       icon = GFX_goal_generic_construct_infrastructure
+	       cost = 1
+	       prerequisite = {
+			focus = DDR_civ_fabric_2
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			add_offsite_building = {
+				type = infrastructure
+				level = 5
+			}
+		} 
+	}
+	
+	focus = { 
+	       id = DDR_civ_fabric_4
+	       icon = GFX_goal_generic_construct_infrastructure
+	       cost = 1
+	       prerequisite = {
+			focus = DDR_civ_fabric_3
+		}
+		x = 3
+		y = 9
+		completion_reward = {
+			add_offsite_building = {
+				type = infrastructure
+				level = 8
+			}
+		} 
+	}
+	
 	focus = {
 		id = DDR_ind_2
 		icon = GFX_goal_generic_construct_infrastructure
@@ -209,24 +268,37 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
-		id = DDR_natcom
-		icon = GFX_goal_support_fourth_int
+		id = DDR_ind_3
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 1
 		prerequisite = {
-			focus = DDR_ideology
+			focus = DDR_ind_2
 		}
-		mutually_exclusive = {
-			focus = DDR_marx
-			focus = DDR_socdem
-		}
-		x = 25
-		y = 2
+		x = 6
+		y = 8
 		completion_reward = {
-			chucheism_drift = 0.1
-		}
-		available = {
-			always = no
-		}
+			add_offsite_building = {
+				type = infrastructure
+				level = 4
+			}
+		} 
 	}
-}
+	
+	focus = {
+		id = DDR_ind_4
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 1
+		prerequisite = {
+			focus = DDR_ind_3
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+			add_offsite_building = {
+				type = infrastructure
+				level = 4
+			}
+		} 
+	}
