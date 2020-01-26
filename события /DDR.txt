@@ -217,7 +217,7 @@ country_event = {
 	}
 	option = {
 		name = ddr.7.c
-		add_political_power = -20
+		add_political_power = -200
 		complete_national_focus = DDR_natcom
 		set_politics = {
 			ruling_party = chucheism
